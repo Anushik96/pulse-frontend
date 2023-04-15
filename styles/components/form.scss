@@ -1,0 +1,63 @@
+@import '../mixins.scss';
+@import '../variable.scss';
+
+.field {
+    width: 100%;
+    margin-bottom: 32px;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.02em; 
+      color: #514F66
+    }
+  
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #BEBDC6;
+
+      &::after{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #BEBDC6;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  
+    .error {
+      color: red;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+ .form_group{
+    @include flex();
+    .field {
+        width: calc(50% - 16px);
+        @include media(678px) {
+          width: 100%;
+         }
+    } 
+    @include media(678px) {
+     display: block;
+    }
+}
+  
+ .PhoneInput .PhoneInputCountry {
+    border-bottom: 1px solid #BEBDC6;
+    margin-right: 0;
+    padding-right: 10px;
+}

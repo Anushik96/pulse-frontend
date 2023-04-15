@@ -1,0 +1,11 @@
+@mixin media($point) {
+    @media (max-width: $point) {
+      @content;
+    }
+}
+
+@mixin flex(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

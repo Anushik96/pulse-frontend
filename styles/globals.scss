@@ -1,0 +1,238 @@
+@import '../public/fonts/fonts.css';
+@import './variable.scss';
+@import './components/header.scss';
+@import './components/languageSwitcher.scss';
+@import './components/category.scss';
+@import './components/footer.scss';
+@import './components/comingSoon.scss';
+@import './components/product.scss';
+@import './components/form.scss';
+@import './home.scss';
+@import './products.scss';
+@import './about.scss';
+@import './contacts.scss';
+@import './checkout.scss';
+@import './components/filterItem.scss';
+
+*{
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.colloeredWord{
+    background: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.colloeredWordMain{
+    color: #CF445E;
+}
+.subscribeInput{
+   border: none;
+   border-bottom: 1px solid #BEBDC6;
+   height: 40px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.02em;
+   background: transparent;
+   margin-right: 16px;
+   padding: 5px 0;
+   width: 40%;
+   &::placeholder{
+    color: #BEBDC6;
+   }
+   &:focus{
+        outline: none;
+   }
+}
+.mainBtn{
+    background: $primaryColor;
+    padding: 12px 32px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    &:disabled{
+        background: #D3D3D9;
+        color: #fff;
+    }
+    &:hover{
+        background: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
+    }
+    &:focus{
+        background: #CF445E;
+        border: 2px solid #E6ACB7;
+        border-radius: 2px;
+    }
+    &.loading{
+        background: #088C53;
+    }
+
+}
+.linkBtn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: $primaryColor;
+    border: none;
+    background: transparent; 
+    display: block;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    gap: 8px;
+    svg{
+        path{
+            fill: $primaryColor
+        }
+    }
+    &:hover{
+        background: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &:disabled{
+        color: #B6B6B6;
+    }
+    &:focus{
+        background: #F9EAED;
+        color: $primaryColor;
+    }
+}
+.validationErr{
+    color: red;
+    margin: 5px 0;
+}
+
+.slick-slider{
+    .slick-dots{
+        li{
+            margin:0 8px;
+            &.slick-active{
+                button{
+                    background: #CF445E;
+                }
+            }
+            button{
+                width: 28px;
+                height: 4px;
+                background: #F2D5DB;
+                border-radius: 2px;
+                padding: 0;
+                &::before{
+                    content: '';
+                }
+            }
+        }
+}
+}
+.bredcramp{
+    padding: 32px $mainPadding;
+    p{
+        margin: 0;
+    }
+    @include media(1650px) {
+        padding: 32px $smallPadding;
+    }
+    @include media(1500px) {
+        padding: 32px $tabletPadding;
+    }
+
+    @include media(1200px) {
+        padding: 32px $mobilePadding;
+    }
+    @include media(768px){
+        padding: 10px;
+    }
+}
+
+.quantity{
+    display: flex;
+    margin-top: 8px;
+    gap:0  8px;
+    input{
+        border: none;
+        border-bottom: 1px solid#BEBDC6;
+        width: 72px;
+        background: transparent;
+        padding: 0 10px;
+        font-size: 30px;
+        color: #BEBDC6;
+        &:focus{
+            outline: none;
+        }
+        @include media(992px) {
+            width: 52px;
+        }
+    }
+    .mainBtn{
+        background: #F9EAED;
+        padding: 12px;
+        &:hover{
+            background: #CF445E;
+            svg{
+                path{
+                    fill:#fff
+                }
+            }
+        }
+        &:focus{
+            border: 2px solid #ECC1C9;
+        }
+    }
+}
+
+.partner-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: calc((100% / 4) - 18px);
+    background: #FFFFFF;
+    border: 1px solid #ECC1C9;
+    border-radius: 2px;
+    padding: 40px 24px 24px;
+    img{
+        max-width: 140px;
+        width: 100%;
+    }
+    p{
+        display: block;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #3B3953;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &:hover{
+        p{
+            color: $primaryColor;
+        }
+    }
+    @include media(1200px) {
+        width: calc((100% / 3) - 18px);
+    }
+    @include media(768px) {
+        width: calc((100% / 2) - 18px);
+    }
+    @include media(576px) {
+        width: 100%;
+    }
+}

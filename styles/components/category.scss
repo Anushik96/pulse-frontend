@@ -1,0 +1,99 @@
+@import '../variable.scss';
+@import '../mixins.scss';
+
+.categories{
+    background: #fff;
+    padding: 0 $mainPadding;
+    box-shadow: 0px 12px 28px #D3D3D9;
+    position: absolute;
+    z-index: 99;
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.02em;
+        color: #3B3953;
+        text-align: center;
+    }
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category{
+        width: calc(100% / 4);
+        padding: 0 35px;
+        border-left: 1px solid #D3D3D9;
+        margin: 20px 0;    
+        &:first-child, &:nth-child(5n){
+           padding-left: 0;
+           border-left: none
+        }
+        &:nth-child(4n){
+            padding-right: 0;
+         }
+ 
+        &__name{
+            @include flex();
+            border-bottom: 1px solid #D3D3D9;
+            text-decoration: none;
+            padding: 10px 0;
+            h4{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #252340;
+                margin: 0;
+            }
+        }
+        &__info{
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        &__sub{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            &-item{
+                margin-bottom: 10px;
+                a{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #3B3953;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @include media(1650px){
+        padding: 0 $smallPadding;
+    }
+    @include media(1500px){
+        padding: 0 $tabletPadding;
+        .category{
+            width: calc((100% / 3) - 10px);
+        }
+    }
+    @include media(1200px){
+        padding: 0 $mobilePadding;
+        .category{
+            width: calc((100% / 3) - 10px);
+        }
+    }
+    @include media(992px){
+        .category{
+            width: calc((100% / 2) - 10px);
+        }
+    }
+    @include media(570px){
+        .category{
+            width: 100%;
+        }
+    }
+}
