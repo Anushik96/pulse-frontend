@@ -6,19 +6,19 @@ import SliderPartner from "@/components/SliderPartner";
 export default function Home() {
  
   const images = [
-    "/images/slider.png",
-    "/images/slider.png",
-    "/images/slider.png",
-    "/images/slider.png",
+    "images/slider.png",
+    "images/slider.png",
+    "images/slider.png",
+    "images/slider.png",
   ];
   const partnerImg = [
-    "/images/partner.png",
-    "/images/partner.png",
-    "/images/partner.png",
-    "/images/partner.png",
-    "/images/partner.png",
-    "/images/partner.png",
-    "/images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
+    "images/partner.png",
   ];
   return (
     <div className="home">
