@@ -7,7 +7,7 @@ export default function Product({price, status, url}) {
   return (
     <div className="product">
         <p className={`product__status ${status}`}>{status}</p>   
-        <Image className="product__img" src="/images/product.png" alt="" />
+        <Image className="product__img" src="images/product.png" alt="" />
         <div className="product__info">
             <h4 className="product__title">Title with two and more line. Second line </h4>
             { price && 

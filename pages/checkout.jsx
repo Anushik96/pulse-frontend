@@ -48,7 +48,7 @@ export default function Checkout(){
             <div className='checkout__details'>
                 <h3 className='checkout__details--title'>Your Order</h3>
                 <div className='checkout__item'>
-                    <Image className='checkout__item--img' src="/images/product.png" alt="" />
+                    <Image className='checkout__item--img' src="images/product.png" alt="" />
                     <div className='checkout__item--info'>
                         <h4 className='checkout__item--info-title'>Title with two and more line. Second line </h4>
                         <div className='checkout__item--details'>

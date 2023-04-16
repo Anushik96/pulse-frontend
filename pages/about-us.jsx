@@ -14,7 +14,7 @@ export default function About() {
     return (
       <div className="about">
           <Bredcramp/>
-          <Image className="about__header" src="/images/aboutUsBg.png" alt="" />
+          <Image className="about__header" src="images/aboutUsBg.png" alt="" />
           <div className="about__info">
             <div className="about__content">
               <h2 className="about__info--title" dangerouslySetInnerHTML={{ __html: aboutTitle }}></h2>
@@ -33,7 +33,7 @@ export default function About() {
              {partners.map((item, i)=>{
                 return(
                   <div key={i}  className="partner-img">
-                      <Image src="/icons/partner.svg" alt="partner"/>   
+                      <Image src="icons/partner.svg" alt="partner"/>   
                       <p>We trust</p>
                   </div>
                 )
