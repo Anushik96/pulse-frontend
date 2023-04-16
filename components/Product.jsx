@@ -1,12 +1,13 @@
 
 import MainButton from "./Button";
 import Link from "next/link";
+import Image from "next/image";
 export default function Product({price, status, url}) {
 
   return (
     <div className="product">
         <p className={`product__status ${status}`}>{status}</p>   
-        <img className="product__img" src="/images/product.png" alt="" />
+        <Image className="product__img" src="/images/product.png" alt="" />
         <div className="product__info">
             <h4 className="product__title">Title with two and more line. Second line </h4>
             { price && 

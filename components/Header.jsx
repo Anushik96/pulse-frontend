@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from 'next/link';
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 import SearchBar from "./Search";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Categories from "./Categories";
@@ -29,7 +29,7 @@ export default function Header() {
         <nav className="header__nav">
           <div className="header__logo">
             <Link href="/">
-              <img src="/images/logo.svg" alt="Pulse" />
+              <Image src="/images/logo.svg" alt="Pulse" />
             </Link>
             <button className={`categoryBtn ${showCategories && 'active'}`} onClick={handleShowCategories}>
                 {showCategories ? <CloseIcon/> : <CategoryIcon/> }

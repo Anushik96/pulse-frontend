@@ -7,7 +7,12 @@ const nextConfig = {
       use: ["@svgr/webpack"]
     });
     return config;
-  }
+  },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 }
 
 module.exports = nextConfig

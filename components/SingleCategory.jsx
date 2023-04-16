@@ -1,14 +1,14 @@
 import Link from 'next/link';
-
+import Image from 'next/image';
 function  SingleCategory() {
     return (
       <div className="category">
         <Link href='#' className='category__name'>
             <h4>Corks</h4>
-            <img src="/icons/rightArrow.svg" alt="" />
+            <Image src="/icons/rightArrow.svg" alt="" />
         </Link>
         <div className='category__info'>
-            <img src="/images/comingSoon.png" alt="category ing" width="150px"  height="150px" />
+            <Image src="/images/comingSoon.png" alt="category ing" width="150px"  height="150px" />
             <ul className='category__sub'>
                 <li className='category__sub-item'>
                   <Link href='#'>

@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 export default function SliderPartner({ images }) {
     const settings = {
       dots: true,
@@ -31,7 +31,7 @@ export default function SliderPartner({ images }) {
       <Slider {...settings}>
         {images.map((image, i) => (
             <div key={i}  className="partner-img">
-              <img src="/icons/partner.svg" alt="partner"/>   
+              <Image src="/icons/partner.svg" alt="partner"/>   
               <p>We trust</p>
             </div>
         ))}

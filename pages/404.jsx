@@ -1,5 +1,6 @@
 import Subscribtion from "../components/Subscribtion";
 import useColorizeWord from '../hooks/useColorizeWord';
+import Image from "next/image";
 
 // images
 import Logo from '../public/images/logo.svg';
@@ -46,7 +47,7 @@ export default function ComingSoon() {
             </div>  
           </div>
           <div className="comingSoon_img">
-            <img src="images/comingSoon.png" alt="Coming soon" />
+            <Image src="/images/comingSoon.png" alt="Coming soon" />
           </div>
       </div>
     );

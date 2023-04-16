@@ -16,7 +16,7 @@ export default function Products() {
       <div className="products">
             <div className="products__header">
                 <h1 className="products__header--title">Explore our products</h1>
-                <p className="products__header--desc">The team of Direlli LLC consists of more than 20 people. Our style is the speed of execution and the benefit of the company's customers, but first of all — love of our work. This helps us to successfully create digital products for business since its </p>
+                <p className="products__header--desc">The team of Direlli LLC consists of more than 20 people. Our style is the speed of execution and the benefit of the company&apos;s customers, but first of all — love of our work. This helps us to successfully create digital products for business since its </p>
             </div>
             <div>
                 <Bredcramp/>

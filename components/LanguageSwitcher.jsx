@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLanguage, setLanguage] = useState('En');
@@ -16,7 +17,7 @@ function LanguageSwitcher() {
   return (
     <div className="language-switcher">
       <button className="language-dropdown-button" onClick={handleDropdownClick}>
-        <img src="/icons/languages.svg" alt="" />
+        <Image src="/icons/languages.svg" alt="" />
         {currentLanguage}
       </button>
       {isOpen && (

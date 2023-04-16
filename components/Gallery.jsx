@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
-
+import Image from 'next/image';
 
 
 export default function GalleryComponent() {
@@ -70,7 +70,7 @@ export default function GalleryComponent() {
   ]}
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
-      gallery: '#' + gallery.galleryID,
+      gallery: '#abot-gallery',
       children: 'a',
       pswpModule: () => import('photoswipe'),
     });
@@ -93,7 +93,7 @@ export default function GalleryComponent() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={image.thumbnailURL} alt="" />
+          <Image src={image.thumbnailURL} alt="" />
         </a>
       ))}
     </div>

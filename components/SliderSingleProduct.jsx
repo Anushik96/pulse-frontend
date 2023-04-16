@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 const SingleSliderProduct = () => {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
@@ -48,7 +49,7 @@ const SingleSliderProduct = () => {
         >
         {images.map((item, i) => {
             return (
-                <img key={i} src={item} alt="" />
+                <Image key={i} src={item} alt="" />
             )
         })}
       </Slider>
@@ -59,7 +60,7 @@ const SingleSliderProduct = () => {
       >
        {images.map((item, i) => {
             return (
-                <img key={i} src={item} alt="" />
+                <Image key={i} src={item} alt="" />
             )
         })}
       </Slider>
