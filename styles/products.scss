@@ -5,7 +5,7 @@
     background: #FAFAFB;
     &__header{
         padding: 50px 20% 160px ;
-        // background-image: url('images/aboutUsBg.png');
+        background-image: url('/images/aboutUsBg.png');
         background-repeat: no-repeat;
         background-position: top center;
         &--title{
@@ -476,7 +476,7 @@
                 right: 0;
                 &:before{
                     content: '';
-                    // background-image: url('icons/sliderArrowNext.svg');
+                    background-image: url('/icons/sliderArrowNext.svg');
                 }
                 @include media(576px){
                     right: 5%;
@@ -486,7 +486,7 @@
                 left: -32px;
                 &:before{
                     content: '';
-                    // background-image: url('/icons/sliderArrowPrev.svg');
+                    background-image: url('/icons/sliderArrowPrev.svg');
                 }
                 @include media(576px){
                     left: -8%;
