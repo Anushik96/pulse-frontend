@@ -2,8 +2,8 @@
   "name": "pulse-project",
   "version": "0.1.0",
   "private": true,
-  "export": "next export",
   "scripts": {
+    "export": "next export",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
