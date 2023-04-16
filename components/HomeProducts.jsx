@@ -1,7 +1,7 @@
 import useColorizeWord from '../hooks/useColorizeWord';
 import SliderProduct from './SliderProduct';
 import LinkButton from './LinkButton';
-
+import Link from 'next/link';
 export default function HomeProduct() {
     const text = useColorizeWord('Wine packaging accessories', 1, 'colloeredWordMain');
 
@@ -10,7 +10,7 @@ export default function HomeProduct() {
         <div className='homeProduct__category'>
             <h2 className="homeProduct__category--title" dangerouslySetInnerHTML={{ __html: text }}></h2>
             <p className="homeProduct__category--desc">Lorem ipsum dolor sit amet consectetur. Mus sed augue fames tristique mi elementum volutpat magna. Ut non enim dui vitae egestas justo aliquet sed suspendisse. Iaculis pharetra commodo cras fringilla facilisis ullamco. Lorem ipsum dolor sit amet consectetur. Mus sed augue fames tristique mi elementum volutpat magna. Ut non enim dui vi</p>
-            <LinkButton text="View All"/>
+            <Link to="/products"><LinkButton text="View All"/></Link>
         
             <div className='homeProduct__categories'>
                 <SliderProduct slidesToShow={3} slidesToShowResponcive={2}/>
