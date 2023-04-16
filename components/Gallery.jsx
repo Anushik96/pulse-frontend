@@ -93,7 +93,7 @@ export default function GalleryComponent() {
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={image.thumbnailURL} alt="" />
+          <img src={image.thumbnailURL} alt="" />
         </a>
       ))}
     </div>

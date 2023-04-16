@@ -49,7 +49,7 @@ const SingleSliderProduct = () => {
         >
         {images.map((item, i) => {
             return (
-                <Image key={i} src={item} alt="" />
+                <img key={i} src={item} alt="" />
             )
         })}
       </Slider>
@@ -60,7 +60,7 @@ const SingleSliderProduct = () => {
       >
        {images.map((item, i) => {
             return (
-                <Image key={i} src={item} alt="" />
+                <img key={i} src={item} alt="" />
             )
         })}
       </Slider>
