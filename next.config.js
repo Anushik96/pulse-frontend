@@ -8,10 +8,7 @@ const nextConfig = {
     });
     return config;
   },
-  images: {
-    disableStaticImages: true,
-  },
-  assetPrefix: './',
+  
 }
 
 module.exports = nextConfig
