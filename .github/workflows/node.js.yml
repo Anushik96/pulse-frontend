@@ -30,3 +30,4 @@ jobs:
         with:
           token: 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
           BRANCH: main # The branch the action will deploy to
+          FOLDER: dist # The folder the action will deploy to
