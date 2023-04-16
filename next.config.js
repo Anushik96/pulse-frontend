@@ -12,6 +12,10 @@ const nextConfig = {
     disableStaticImages: true,
   },
   assetPrefix: './',
+  sass: true,
+  images: {
+        domains: ['https://anushik96.github.io'],
+  }
 }
 
 module.exports = nextConfig
