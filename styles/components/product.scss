@@ -50,7 +50,7 @@
         }
 
         &__title{
-            background-image: url('/images/homeProduct.png');
+            background-image: url('../public/images/homeProduct.png');
             width: 30%;
             position: relative;
             text-align: center;
@@ -148,7 +148,7 @@
                 position: absolute;
                 width: 36px;
                 height: 36px;
-                background-image: url('/icons/sliderArrowNext.svg');
+                background-image: url('../public/icons/sliderArrowNext.svg');
             }
             @include media(800px){
                 right: 29%;
@@ -164,7 +164,7 @@
                 position: absolute;
                 width: 36px;
                 height: 36px;
-                background-image: url('/icons/sliderArrowPrev.svg');
+                background-image: url('../public/icons/sliderArrowPrev.svg');
             }
             @include media(800px){
                 left: 25%;
