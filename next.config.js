@@ -8,14 +8,12 @@ const nextConfig = {
     });
     return config;
   },
-  images: {
+    images: {
+    loader: 'akamai',
+    path: '',
     disableStaticImages: true,
   },
   assetPrefix: './',
-  sass: true,
-  images: {
-        domains: ['https://anushik96.github.io'],
-  }
 }
 
 module.exports = nextConfig
