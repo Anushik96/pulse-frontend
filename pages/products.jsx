@@ -94,3 +94,11 @@ export default function Products() {
     );
   }
     
+
+  export async function getServerSideProps() {
+  // Fetch data from external API
+  const data = {}
+
+  // Pass data to the page via props
+  return { props: { data } }
+}

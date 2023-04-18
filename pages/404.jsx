@@ -47,7 +47,7 @@ export default function ComingSoon() {
             </div>  
           </div>
           <div className="comingSoon_img">
-            <Image src="/images/comingSoon.png" alt="Coming soon" />
+            <Image src="/images/comingSoon.png" alt="Coming soon"  width={696} height={500}/>
           </div>
       </div>
     );

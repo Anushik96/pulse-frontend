@@ -14,7 +14,7 @@ function SearchBar ({ onSubmit }){
     >
       {({ isSubmitting }) => (
         <Form className={`searchInput ${showInput && 'active'}`}>
-            <label htmlFor="search" onClick={hendleShowInput}><Image src="icons/search.svg" alt="" /></label>
+            <label htmlFor="search" onClick={hendleShowInput}><Image src="/icons/search.svg" alt=""  width={20} height={20}/></label>
             <Field type="text" name="searchQuery" placeholder="Search..." id="search" />
         </Form>
       )}

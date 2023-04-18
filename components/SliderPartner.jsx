@@ -31,7 +31,7 @@ export default function SliderPartner({ images }) {
       <Slider {...settings}>
         {images.map((image, i) => (
             <div key={i}  className="partner-img">
-              <Image src="icons/partner.svg" alt="partner"/>   
+              <Image src="/icons/partner.svg" alt="partner"  width={138} height={38}/>   
               <p>We trust</p>
             </div>
         ))}

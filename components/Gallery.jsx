@@ -10,60 +10,60 @@ export default function GalleryComponent() {
     images:[
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg',
+        '/images/gallery.png',
       width: 1875,
       height: 2500,
     },
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg',
+        '/images/gallery.png',
       width: 1669,
       height: 2500,
     },
     {
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },{
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },{
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },{
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },{
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },{
       largeURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg',
+        '/images/gallery.png',
       thumbnailURL:
-        'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg',
+        '/images/gallery.png',
       width: 2500,
       height: 1666,
     },
@@ -93,7 +93,7 @@ export default function GalleryComponent() {
           target="_blank"
           rel="noreferrer"
         >
-          <Image src={image.thumbnailURL} alt="" />
+          <Image src={image.thumbnailURL} alt="" width={262} height={262}/>
         </a>
       ))}
     </div>

@@ -16,7 +16,7 @@ export default function SimpleSlider({ images }) {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <Image src={image} alt={image}/>
+            <Image src={image} alt={image} width={500} height={500}/>
           </div>
         ))}
       </Slider>

@@ -17,7 +17,7 @@ function LanguageSwitcher() {
   return (
     <div className="language-switcher">
       <button className="language-dropdown-button" onClick={handleDropdownClick}>
-        <Image src="icons/languages.svg" alt="" />
+        <Image src="/icons/languages.svg" alt=""  width={20} height={20}/>
         {currentLanguage}
       </button>
       {isOpen && (

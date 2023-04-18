@@ -10,7 +10,7 @@ export default function HomeProduct() {
         <div className='homeProduct__category'>
             <h2 className="homeProduct__category--title" dangerouslySetInnerHTML={{ __html: text }}></h2>
             <p className="homeProduct__category--desc">Lorem ipsum dolor sit amet consectetur. Mus sed augue fames tristique mi elementum volutpat magna. Ut non enim dui vitae egestas justo aliquet sed suspendisse. Iaculis pharetra commodo cras fringilla facilisis ullamco. Lorem ipsum dolor sit amet consectetur. Mus sed augue fames tristique mi elementum volutpat magna. Ut non enim dui vi</p>
-            <Link to="/products"><LinkButton text="View All"/></Link>
+            <Link href="/products"><LinkButton text="View All"/></Link>
         
             <div className='homeProduct__categories'>
                 <SliderProduct slidesToShow={3} slidesToShowResponcive={2}/>

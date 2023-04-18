@@ -20,7 +20,6 @@ const SingleSliderProduct = () => {
 
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -49,7 +48,7 @@ const SingleSliderProduct = () => {
         >
         {images.map((item, i) => {
             return (
-                <Image key={i} src={item} alt="" />
+                <Image key={i} src={item} alt=""  width={816} height={168}/>
             )
         })}
       </Slider>
@@ -60,7 +59,7 @@ const SingleSliderProduct = () => {
       >
        {images.map((item, i) => {
             return (
-                <Image key={i} src={item} alt="" />
+                <Image key={i} src={item} alt=""  width={256} height={168}/>
             )
         })}
       </Slider>

@@ -29,7 +29,7 @@ export default function Header() {
         <nav className="header__nav">
           <div className="header__logo">
             <Link href="/">
-              <Image src="images/logo.svg" alt="Pulse" />
+              <Image src="/images/logo.svg" alt="Pulse"  width={0} height={0}/>
             </Link>
             <button className={`categoryBtn ${showCategories && 'active'}`} onClick={handleShowCategories}>
                 {showCategories ? <CloseIcon/> : <CategoryIcon/> }
