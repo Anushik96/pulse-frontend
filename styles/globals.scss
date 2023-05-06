@@ -1,25 +1,19 @@
 @import '../public/fonts/fonts.css';
 @import './variable.scss';
-@import './components/header.scss';
-@import './components/languageSwitcher.scss';
-@import './components/category.scss';
-@import './components/footer.scss';
 @import './components/comingSoon.scss';
-@import './components/product.scss';
-@import './components/form.scss';
-@import './home.scss';
-@import './products.scss';
-@import './about.scss';
-@import './contacts.scss';
-@import './checkout.scss';
-@import './components/filterItem.scss';
 
 *{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
     box-sizing: border-box;
 }
 a{
     text-decoration: none;
+}
+main{
+    padding-top: 65px;
+    @include media(768px) {
+       padding-top: 50px;
+    }
 }
 .colloeredWord{
     background: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
@@ -63,14 +57,24 @@ a{
     align-items: center;
     cursor: pointer;
     gap: 10px;
-    &:disabled{
-        background: #D3D3D9;
-        color: #fff;
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
     }
-    &:hover{
-        background: linear-gradient(90deg, #CF445E 0%, #7C104A 99.89%);
+    &:hover::before {
+        opacity: 1;
     }
-    &:focus{
+    &:focus-visible{
         background: #CF445E;
         border: 2px solid #E6ACB7;
         border-radius: 2px;
@@ -78,6 +82,14 @@ a{
     &.loading{
         background: #088C53;
     }
+     &:disabled {
+         background: #D3D3D9;
+         color: #fff;
+         cursor: no-drop;
+        &:hover::before {
+                opacity: 0;
+            }
+     }
 
 }
 .linkBtn{
@@ -104,14 +116,15 @@ a{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
     }
     &:disabled{
         color: #B6B6B6;
+        cursor: no-drop;
     }
     &:focus{
         background: #F9EAED;
         color: $primaryColor;
+       -webkit-text-fill-color: $primaryColor;
     }
 }
 .validationErr{
@@ -141,10 +154,31 @@ a{
         }
 }
 }
-.bredcramp{
+.breadcrumbs{
     padding: 32px $mainPadding;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        align-items: center;
+    }
+    a, p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3D3940;
+        display: inline-block;
+    }
     p{
-        margin: 0;
+        font-weight: 600;
+         color: #202630;
+    }
+    @include media-min(2500px) {
+        padding: 32px $largePadding;
+    }
+     @include media-min(19200px) {
+        padding: 32px $bigPadding;
     }
     @include media(1650px) {
         padding: 32px $smallPadding;
@@ -164,7 +198,8 @@ a{
 .quantity{
     display: flex;
     margin-top: 8px;
-    gap:0  8px;
+    gap: 0 8px;
+    align-items: flex-end;
     input{
         border: none;
         border-bottom: 1px solid#BEBDC6;
@@ -172,6 +207,7 @@ a{
         background: transparent;
         padding: 0 10px;
         font-size: 30px;
+        height: 100%;
         color: #BEBDC6;
         &:focus{
             outline: none;

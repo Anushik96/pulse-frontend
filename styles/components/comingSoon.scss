@@ -17,6 +17,12 @@
         form{
             display: flex;
         }
+         @include media-min(2500px) {
+             padding: 43px 24px 0 $largePadding;
+         }
+         @include media-min(19200px) {
+             padding: 43px 24px 0 $bigPadding;
+         }
         @include media(1650px) {
             padding: 43px 24px 0 $smallPadding;
         }
@@ -110,6 +116,10 @@
             display: flex;
             align-items: center;
             gap: 5px;
+            svg{
+                min-width: 20px;
+                min-height: 20px;
+            }
         }
         @include media(768px){
             flex-direction: column;
@@ -123,7 +133,13 @@
            height: 100%;
         }
     }
-
+    @include media-min(2500px) {
+        padding: 0 $largePadding 0 0;
+    }
+   
+    @include media-min(19200px) {
+        padding: 0 $bigPadding 0 0;
+    }
     @include media(1650px) {
         padding: 0 $smallPadding 0 0;
     }

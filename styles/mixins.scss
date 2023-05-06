@@ -3,7 +3,11 @@
       @content;
     }
 }
-
+@mixin media-min($point) {
+  @media (min-width: $point) {
+    @content;
+  }
+}
 @mixin flex(){
   display: flex;
   justify-content: space-between;

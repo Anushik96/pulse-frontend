@@ -1,20 +1,9 @@
 import '@/styles/globals.scss'
 import 'normalize.css/normalize.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-import Layout from '@/components/layouts/Layout';
 export default function MyApp({ Component, pageProps }) {
-  
-  if (Component.name === 'ComingSoon') {
-    return (
+      return (
         <Component {...pageProps} />
     );
-  }else{
-  return (
-    <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
-  );
-  }
 }
