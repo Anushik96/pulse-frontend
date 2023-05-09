@@ -1,10 +1,8 @@
-import { useTranslation } from "react-i18next";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 
 function Subscribtion(){
-  const {t} = useTranslation();
   const initialValues = {
     email: '',
   };
@@ -33,9 +31,9 @@ function Subscribtion(){
       onSubmit={handleSubmit}>
       {({ isSubmitting, status }) => (
         <Form>
-          <Field className="subscribeInput" type="email" id="email" name="email" placeholder={t('Email address')} required />
+          <Field className="subscribeInput" type="email" id="email" name="email" placeholder='Email address' required />
           <button className="mainBtn" type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : t('Subscribe')}
+            {isSubmitting ? 'Submitting...' : 'Subscribe'}
           </button>
           <ErrorMessage className="validationErr" name="email" component="div" />
           {status && status.message && (

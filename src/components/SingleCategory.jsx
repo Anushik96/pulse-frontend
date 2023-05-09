@@ -1,11 +1,9 @@
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import image from '../assets/images/comingSoon.png'
 import { ReactComponent as ArrorIcon } from "../assets/icons/rightArrow.svg";
 
 function  SingleCategory() {
-  const {t} = useTranslation()
     return (
       <div className="category">
         <Link>
