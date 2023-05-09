@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e142bb4f.css",
+    "main.js": "/static/js/main.bf09639f.js",
+    "static/js/787.f2dcc032.chunk.js": "/static/js/787.f2dcc032.chunk.js",
+    "static/media/comingSoon.png": "/static/media/comingSoon.039ca6ee4d4809b04d49.png",
+    "static/media/Segoe UI Bold Italic.woff": "/static/media/Segoe UI Bold Italic.04ca0df8c9e54c81b1a5.woff",
+    "static/media/Segoe UI Italic.woff": "/static/media/Segoe UI Italic.eb9dca895cf2de5deeda.woff",
+    "static/media/Segoe UI Bold.woff": "/static/media/Segoe UI Bold.21ecd6932d8c6e2ae14e.woff",
+    "static/media/Segoe UI.woff": "/static/media/Segoe UI.293e692f583af77a347b.woff",
+    "static/media/logo.svg": "/static/media/logo.116aab88290920839d4003cdb2481684.svg",
+    "static/media/instagram.svg": "/static/media/instagram.d42f13c5735926748937a142428ab326.svg",
+    "static/media/mobile.svg": "/static/media/mobile.51234c41df78e2649e085dbddb8af1b1.svg",
+    "static/media/comingSoonVector.svg": "/static/media/comingSoonVector.531185136fe2f4e62591.svg",
+    "static/media/message.svg": "/static/media/message.b01353176de7f2071153d3beb158401e.svg",
+    "static/media/location.svg": "/static/media/location.04c426243931b296cd59aba24e09455d.svg",
+    "index.html": "/index.html",
+    "static/media/telegram.svg": "/static/media/telegram.79f824e2e4601b50ebae5661fc59ac54.svg",
+    "static/media/facebook.svg": "/static/media/facebook.e7b05f341d7486f3debc967b749f3232.svg",
+    "main.e142bb4f.css.map": "/static/css/main.e142bb4f.css.map",
+    "main.bf09639f.js.map": "/static/js/main.bf09639f.js.map",
+    "787.f2dcc032.chunk.js.map": "/static/js/787.f2dcc032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e142bb4f.css",
+    "static/js/main.bf09639f.js"
+  ]
+}
